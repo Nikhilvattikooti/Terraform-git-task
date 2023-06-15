@@ -95,7 +95,7 @@ resource "aws_route_table_association" "b" {
 resource "aws_nat_gateway" "Terraform_NAT" {
   connectivity_type = "private"
   subnet_id         = aws_subnet.subnet-1.id
-  subnet_id         = aws_subnet.subnet-3.id
+  //subnet_id         = aws_subnet.subnet-3.id
   tags = {
     Name = "NAT-Gate"
   }
