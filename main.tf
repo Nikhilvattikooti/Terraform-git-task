@@ -13,7 +13,7 @@ resource "aws_internet_gateway" "gw" {
   }
 }
 
-resource "aws_subnet" "subnet-1" { //public subnet1
+resource "aws_subnet" "subnet-1" { //publi subnet1
   vpc_id     = aws_vpc.my_VPC.id
   cidr_block = "10.0.1.0/24"
   availability_zone = "ap-south-1b"
